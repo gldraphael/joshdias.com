@@ -1,0 +1,11 @@
+{
+  "name": "joshdias.com",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-cssmin": "0.1.7",
+    "gulp-concat": "2.6.0",
+    "gulp-autoprefixer": "2.3.1"
+  }
+}
