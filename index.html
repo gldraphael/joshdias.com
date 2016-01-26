@@ -3,40 +3,62 @@
     <head>
         <title>Joshua Dias</title>
         <link href="css/site.min.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     </head>
     <body>
         <div class="body-wrapper">
-            <div class="dp" style="background-image:url(img/ivan.jpg)"></div>
+            <div class="dp" style="background-image:url(img/mom.jpg)"></div>
+            <div class="text"><span>Josh I love you. Thank you for everything that you have done for us. Thanks for being the man of the house in your Daddy's absence. You have provided always without hesitation. Be always kind and good to all. Love you my son.</span></div>
+            
             <div class="dp" style="background-image:url(img/dan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/galdin.jpg)"></div>
-            <div class="dp" style="background-image:url(img/ivan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/dan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/galdin.jpg)"></div>
-            <div class="dp" style="background-image:url(img/ivan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/dan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/galdin.jpg)"></div>
-            <div class="dp" style="background-image:url(img/ivan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/dan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/galdin.jpg)"></div>
-            <div class="dp" style="background-image:url(img/ivan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/dan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/galdin.jpg)"></div>
+            <div class="text"><span>Ever since you came into my life you have been a light, a blessing and a Joy. Your immense talent my bubba is beautifully offset in your kindness and your love of all things of God. Keep shining my brother. Love you always little hero.</span></div>
+            
+            <div class="dp" style="background-image:url(img/enu.jpg)"></div>
+            <div class="text"><span>Hey josh happy birthday I wish I was there partying with you and making nice with Gail however I am here and unable to attend your bash. All the best you will always be my best friend and amazing brother. Stay awesome and take picks and send.</span></div>
             
             <div class="dp" style="background-image:url(img/ivan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/dan.jpg)"></div>
+            <div class="text">
+                <p>It's a big world out there,<br />
+                With an expanding sky that We can dare,<br />
+                Spread your wings, and soar the sky,<br />
+                Because You were born to fly.<br /></p>
+
+                <p>May turbulence not affect your journey,<br />
+                May bad frequencies not come your way,<br />
+                May the Sun shine brightly on You today,<br />
+                As you fly that Learjet someday.</p>
+
+                <p>Happy birthday to my best buddy, brother, and an amazing friend.<br />
+                I know you are getting older, but it's okay. I will reach that age someday.<br />
+                Cherish the moments that we are going to have in the future. I know they are going to be epic. Happy birthday man. Drink like a 19 year old. </p>
+            </div>
+            
             <div class="dp" style="background-image:url(img/galdin.jpg)"></div>
-            <div class="dp" style="background-image:url(img/ivan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/dan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/galdin.jpg)"></div>
-            <div class="dp" style="background-image:url(img/ivan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/dan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/galdin.jpg)"></div>
-            <div class="dp" style="background-image:url(img/ivan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/dan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/galdin.jpg)"></div>
-            <div class="dp" style="background-image:url(img/ivan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/dan.jpg)"></div>
-            <div class="dp" style="background-image:url(img/galdin.jpg)"></div>
+            <div class="text"><span>Happy birthday bro. Be awesome :D</span></div>
         </div>
+        
+        <div id="overlay">
+            <span id="close">&times;</span>
+            <div id="message">
+                
+            </div>
+        </div>
+        
+        <script>
+            $(document).ready(function() {
+                $overlay = $('#overlay');
+                $message = $overlay.find('#message');
+                
+                $('.dp').bind("click", function(){
+                    $text = $(this).next('.text');
+                    $message.html($text.html());
+                    $overlay.fadeIn();
+                });
+                
+                $('#close').bind("click", function(){
+                   $overlay.fadeOut(); 
+                });
+            });
+        </script>
     </body>
-</html
+</html>
