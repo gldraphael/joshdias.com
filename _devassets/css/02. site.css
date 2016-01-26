@@ -22,7 +22,6 @@ body{
 .dp:hover{
     background-color: white;
     background-image: none
-    
 }
 
 .text{
@@ -61,11 +60,18 @@ body{
 }
 
 #message{
-    margin: 200px auto auto auto;
+    /*margin: 200px auto auto auto;*/
+    margin: 10px auto;
     padding: 15px;
     max-width: 500px;
     font-size: 16pt;
     text-align: center
+}
+
+#message img{
+    width: 100%;
+    border: solid 2px #dedede;
+    margin-bottom: 10px;
 }
 
 #close{
