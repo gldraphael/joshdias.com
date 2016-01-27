@@ -28,11 +28,19 @@ body{
     display: none
 }
 
+.display-block{
+    display: inline-block;
+}
+
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
     h1{
         margin-top: 50px;
         margin-bottom: 25px;
+    }
+    
+    .display-block{
+        display: block;
     }
 }
 
@@ -88,8 +96,4 @@ body{
 
 #close:hover{
     color: #000;
-}
-
-.display-block{
-    display: block;
 }
