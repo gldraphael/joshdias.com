@@ -36,10 +36,6 @@ body{
     }
 }
 
-@media only screen and (max-width: 767px) {
-    /* phones */
-}
-
 @media only screen and (max-width: 767px) and (orientation: portrait) {
     .body-wrapper{
         margin: 10px;
@@ -92,4 +88,8 @@ body{
 
 #close:hover{
     color: #000;
+}
+
+.display-block{
+    display: block;
 }
